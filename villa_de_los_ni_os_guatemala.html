@@ -1,0 +1,680 @@
+<!DOCTYPE html>
+                            accent: '#10B981',
+                            dark: '#0F172A',
+                            light: '#F8FAFC'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        body: ['Roboto', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800;900&family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        .gradient-gold {
+            background: linear-gradient(135deg, #FFFBEB 0%, #FEF3C7 100%);
+        }
+        .basketball-glow {
+            box-shadow: 0 0 25px rgba(245, 158, 11, 0.35);
+        }
+        .hero-bg {
+            background: linear-gradient(rgba(15, 23, 42, 0.75), rgba(30, 58, 138, 0.85)), url('https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&q=80&w=1600') center/cover no-repeat;
+        }
+    </style>
+</head>
+<body class="font-body bg-slate-50 text-slate-800 antialiased selection:bg-brand-gold selection:text-slate-900">
+
+    <!-- Navigation Header -->
+    <header class="sticky top-0 z-50 bg-white/95 backdrop-blur-md shadow-md transition-all">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between items-center h-20">
+                <!-- Logo & Brand -->
+                <a href="#" class="flex items-center space-x-3 group">
+                    <div class="w-12 h-12 rounded-full bg-brand-blue flex items-center justify-center text-amber-400 font-extrabold text-xl shadow-md group-hover:scale-105 transition-transform">
+                        <i class="fa-solid fa-child-reaching"></i>
+                    </div>
+                    <div>
+                        <span class="font-sans font-extrabold text-xl tracking-tight text-brand-blue block leading-tight">VILLA DE LOS NIÑOS</span>
+                        <span class="text-xs font-semibold text-brand-gold uppercase tracking-wider block">Guatemala</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Nav -->
+                <nav class="hidden md:flex space-x-8 font-sans font-semibold text-sm text-slate-700">
+                    <a href="#inicio" class="hover:text-brand-sky transition-colors py-2">Inicio</a>
+                    <a href="#educacion" class="hover:text-brand-sky transition-colors py-2">Educación</a>
+                    <a href="#deportes" class="hover:text-brand-sky transition-colors py-2 flex items-center space-x-1">
+                        <span>Deportes</span>
+                        <span class="bg-amber-100 text-amber-800 text-xs px-2 py-0.5 rounded-full font-bold">Baloncesto ★</span>
+                    </a>
+                    <a href="#vida-residencial" class="hover:text-brand-sky transition-colors py-2">Vida Residencial</a>
+                    <a href="#actividades" class="hover:text-brand-sky transition-colors py-2">Actividades</a>
+                </nav>
+
+                <!-- CTA Button -->
+                <div class="hidden md:block">
+                    <a href="#contacto" class="bg-brand-gold hover:bg-amber-500 text-slate-900 font-sans font-bold px-5 py-2.5 rounded-full shadow-md hover:shadow-lg transition-all text-sm inline-flex items-center gap-2">
+                        <i class="fa-solid fa-heart text-red-600"></i> Apoyar Misión
+                    </a>
+                </div>
+
+                <!-- Mobile menu button -->
+                <button id="mobile-menu-btn" class="md:hidden text-slate-700 hover:text-brand-blue focus:outline-none p-2" aria-label="Abrir Menú">
+                    <i class="fa-solid fa-bars text-2xl"></i>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Nav Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200 px-4 pt-2 pb-6 space-y-3">
+            <a href="#inicio" class="mobile-link block px-3 py-2 rounded-md font-sans font-medium text-slate-700 hover:bg-slate-100">Inicio</a>
+            <a href="#educacion" class="mobile-link block px-3 py-2 rounded-md font-sans font-medium text-slate-700 hover:bg-slate-100">Educación</a>
+            <a href="#deportes" class="mobile-link block px-3 py-2 rounded-md font-sans font-medium text-brand-gold font-bold bg-amber-50">Deportes & Baloncesto</a>
+            <a href="#vida-residencial" class="mobile-link block px-3 py-2 rounded-md font-sans font-medium text-slate-700 hover:bg-slate-100">Vida Residencial</a>
+            <a href="#actividades" class="mobile-link block px-3 py-2 rounded-md font-sans font-medium text-slate-700 hover:bg-slate-100">Actividades</a>
+            <a href="#contacto" class="mobile-link block text-center bg-brand-gold text-slate-900 font-bold px-4 py-2.5 rounded-xl shadow mt-4">Apoyar Misión</a>
+        </div>
+    </header>
+
+    <!-- HERO SECTION -->
+    <section id="inicio" class="relative hero-bg text-white py-24 lg:py-36 flex items-center">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-center lg:text-left">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="inline-block bg-amber-500/20 text-amber-300 border border-amber-400/30 font-sans font-semibold text-xs sm:text-sm px-4 py-1.5 rounded-full backdrop-blur-md uppercase tracking-wider">
+                        <i class="fa-solid fa-graduation-cap mr-1.5"></i> Transformando Vidas en Guatemala
+                    </span>
+                    <h1 class="font-sans font-black text-4xl sm:text-5xl lg:text-6xl tracking-tight leading-tight">
+                        La Villa de los Niños <span class="text-amber-400 underline decoration-amber-400/50">Guatemala</span>
+                    </h1>
+                    <p class="text-lg sm:text-xl text-slate-200 font-light leading-relaxed max-w-2xl">
+                        Un hogar de esperanza y excelencia académica donde miles de jóvenes guatemaltecos construyen su futuro a través de la educación, la disciplina vocacional, los valores y la pasión por el deporte.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start pt-4">
+                        <a href="#deportes" class="bg-amber-500 hover:bg-amber-400 text-slate-950 font-sans font-bold px-8 py-4 rounded-xl shadow-lg transition-all text-center flex items-center justify-center gap-3">
+                            <i class="fa-solid fa-basketball text-lg"></i> Programa Deportivo
+                        </a>
+                        <a href="#educacion" class="bg-white/10 hover:bg-white/20 text-white border border-white/30 font-sans font-semibold px-8 py-4 rounded-xl backdrop-blur-sm transition-all text-center">
+                            Conoce Nuestro Modelo
+                        </a>
+                    </div>
+                </div>
+                <!-- Stat Banner / Highlight Box -->
+                <div class="lg:col-span-5">
+                    <div class="bg-white/10 backdrop-blur-md border border-white/20 p-8 rounded-3xl shadow-2xl space-y-6 text-left">
+                        <h2 class="font-sans font-bold text-2xl text-amber-400 border-b border-white/10 pb-3 flex items-center gap-2">
+                            <i class="fa-solid fa-award"></i> Pilares de Formación
+                        </h2>
+                        <div class="space-y-4">
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-amber-400/20 text-amber-400 flex items-center justify-center font-bold text-lg shrink-0">
+                                    <i class="fa-solid fa-book-open"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-sans font-bold text-white text-base">Excelencia Académica</h3>
+                                    <p class="text-sm text-slate-300">Educación secundaria y bachillerato técnico de alto nivel.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-blue-400/20 text-blue-300 flex items-center justify-center font-bold text-lg shrink-0">
+                                    <i class="fa-solid fa-screws-tilting"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-sans font-bold text-white text-base">Talleres Vocacionales</h3>
+                                    <p class="text-sm text-slate-300">Cómputo, mecánica, electricidad, carpintería y más.</p>
+                                </div>
+                            </div>
+                            <div class="flex items-start gap-4">
+                                <div class="w-10 h-10 rounded-xl bg-emerald-400/20 text-emerald-300 flex items-center justify-center font-bold text-lg shrink-0">
+                                    <i class="fa-solid fa-volleyball"></i>
+                                </div>
+                                <div>
+                                    <h3 class="font-sans font-bold text-white text-base">Deporte e Integración</h3>
+                                    <p class="text-sm text-slate-300">Baloncesto como eje integrador de disciplina y salud.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- EDUCACION & ESTUDIO SECTION -->
+    <section id="educacion" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-brand-sky font-sans font-bold uppercase tracking-wider text-sm">Formación con Propósito</span>
+                <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">Educación, Ciencia y Habilidades Vocacionales</h2>
+                <div class="w-20 h-1.5 bg-brand-gold mx-auto my-4 rounded-full"></div>
+                <p class="text-slate-600 text-lg">En la Villa de los Niños, el estudio no solo brinda conocimiento teórico, sino que prepara a los jóvenes para insertarse con éxito en la sociedad y el mercado laboral.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Academic Card 1 -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-blue-100 text-brand-blue rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-brand-blue group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-graduation-cap"></i>
+                    </div>
+                    <h3 class="font-sans font-bold text-xl text-slate-900 mb-3">Educación Secundaria Básica</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm mb-4">
+                        Currículo oficial enfocado en ciencias, matemáticas, lenguaje, historia y ciencias sociales, garantizando bases sólidas con docentes dedicados.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Refuerzo continuo y tutorías</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Hábitos de estudio diario</li>
+                    </ul>
+                </div>
+
+                <!-- Academic Card 2 -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-amber-100 text-amber-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-amber-500 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-laptop-code"></i>
+                    </div>
+                    <h3 class="font-sans font-bold text-xl text-slate-900 mb-3">Talleres Técnicos y Cómputo</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm mb-4">
+                        Aulas de informática equipadas, electrónica, mecánica básica y tecnología para desarrollar competencias digitales y técnicas de alto impacto.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Certificaciones en herramientas clave</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Prácticas técnicas reales</li>
+                    </ul>
+                </div>
+
+                <!-- Academic Card 3 -->
+                <div class="bg-slate-50 border border-slate-100 rounded-2xl p-8 hover:shadow-xl transition-all duration-300 group">
+                    <div class="w-14 h-14 bg-emerald-100 text-emerald-600 rounded-2xl flex items-center justify-center text-2xl mb-6 group-hover:bg-emerald-600 group-hover:text-white transition-colors">
+                        <i class="fa-solid fa-hammer"></i>
+                    </div>
+                    <h3 class="font-sans font-bold text-xl text-slate-900 mb-3">Oficios Manuales y Arte</h3>
+                    <p class="text-slate-600 leading-relaxed text-sm mb-4">
+                        Aprendizaje práctico en ebanistería, mantenimiento, diseño artesanal y agricultura sostenible que fomentan la autonomía y laboriosidad.
+                    </p>
+                    <ul class="text-xs text-slate-500 space-y-2">
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Proyectos colaborativos</li>
+                        <li><i class="fa-solid fa-check text-emerald-500 mr-2"></i>Valores del trabajo honrado</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION DEPORTES - CON ESPECIAL ENFOQUE EN BALONCESTO -->
+    <section id="deportes" class="py-20 bg-slate-900 text-white relative overflow-hidden">
+        <!-- Decorative SVG background elements -->
+        <div class="absolute -right-20 -top-20 opacity-10 text-amber-500 pointer-events-none">
+            <i class="fa-solid fa-basketball text-[300px]"></i>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="text-center max-w-3xl mx-auto mb-16">
+                <span class="text-amber-400 font-sans font-bold uppercase tracking-wider text-sm"><i class="fa-solid fa-trophy mr-1"></i> Espíritu Deportivo</span>
+                <h2 class="font-sans font-extrabold text-3xl sm:text-5xl text-white mt-2">Deportes en la Villa de los Niños</h2>
+                <p class="text-slate-300 text-lg mt-4">El deporte es el motor de la salud física, el trabajo en equipo, la constancia y el liderazgo en la vida de cada joven.</p>
+            </div>
+
+            <!-- SPOTLIGHT ESPECIAL: BALONCESTO -->
+            <div class="bg-gradient-to-r from-amber-600 via-amber-500 to-orange-600 rounded-3xl p-1 shadow-2xl mb-16 basketball-glow">
+                <div class="bg-slate-950 rounded-[22px] p-6 sm:p-10 lg:p-12">
+                    <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                        <div class="lg:col-span-7 space-y-6">
+                            <div class="inline-flex items-center gap-2 bg-amber-500/20 text-amber-400 border border-amber-500/40 px-4 py-1.5 rounded-full text-xs font-bold uppercase tracking-widest">
+                                <i class="fa-solid fa-star"></i> Deporte Estrella de la Villa
+                            </div>
+                            <h3 class="font-sans font-black text-3xl sm:text-4xl text-white leading-tight">
+                                BALONCESTO: Corazón, Estrategia y Pasión
+                            </h3>
+                            <p class="text-slate-300 leading-relaxed">
+                                El baloncesto en la Villa de los Niños es más que un juego: es una escuela de vida. A través de entrenamientos sistemáticos, torneos internos por residencias y competencias interinstitucionales, los jóvenes aprenden el verdadero significado de confiar en el compañero, la disciplina táctica y la resiliencia en la cancha.
+                            </p>
+                            
+                            <!-- Highlights Grid -->
+                            <div class="grid grid-cols-2 sm:grid-cols-3 gap-4 pt-2">
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-amber-500/20">
+                                    <i class="fa-solid fa-basketball text-amber-400 text-2xl mb-2"></i>
+                                    <h4 class="font-bold text-white text-sm">Torneos Anuales</h4>
+                                    <p class="text-xs text-slate-400">Liga interna de alta competitividad</p>
+                                </div>
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-amber-500/20">
+                                    <i class="fa-solid fa-people-group text-amber-400 text-2xl mb-2"></i>
+                                    <h4 class="font-bold text-white text-sm">Trabajo en Equipo</h4>
+                                    <p class="text-xs text-slate-400">Cooperación e integración</p>
+                                </div>
+                                <div class="bg-slate-900/80 p-4 rounded-xl border border-amber-500/20">
+                                    <i class="fa-solid fa-stopwatch text-amber-400 text-2xl mb-2"></i>
+                                    <h4 class="font-bold text-white text-sm">Entrenamiento</h4>
+                                    <p class="text-xs text-slate-400">Técnica y condición física</p>
+                                </div>
+                            </div>
+
+                            <div class="pt-2">
+                                <span class="text-xs text-amber-300 font-semibold block italic">
+                                    "Cada pase enseña solidaridad; cada enceste, el valor de la perseverancia."
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- Basketball Image Block -->
+                        <div class="lg:col-span-5">
+                            <div class="relative rounded-2xl overflow-hidden shadow-2xl border-2 border-amber-500/30 group">
+                                <img src="https://images.unsplash.com/photo-1546519638-68e109498ffc?auto=format&fit=crop&q=80&w=800" 
+                                     alt="Jóvenes jugando baloncesto" 
+                                     class="w-full h-80 lg:h-96 object-cover group-hover:scale-105 transition-transform duration-500"
+                                     onerror="this.src='https://placehold.co/800x600/1e293b/f59e0b?text=Baloncesto+Guatemala'">
+                                <div class="absolute inset-0 bg-gradient-to-t from-slate-950 via-transparent to-transparent opacity-80"></div>
+                                <div class="absolute bottom-4 left-4 right-4">
+                                    <p class="text-xs text-amber-300 font-bold uppercase tracking-wider">Canchas Polideportivas</p>
+                                    <p class="text-sm font-semibold text-white">Práctica diaria del baloncesto en la Villa</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- OTROS DEPORTES -->
+            <h3 class="font-sans font-bold text-2xl text-white mb-8 text-center sm:text-left flex items-center justify-center sm:justify-start gap-3">
+                <i class="fa-solid fa-volleyball text-amber-400"></i> Otros Deportes y Disciplinas Populares
+            </h3>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Futbol -->
+                <div class="bg-slate-800/80 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&q=80&w=600" 
+                             alt="Fútbol juvenil" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                             onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Futbol'">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-bold px-3 py-1 rounded-full">Fútbol</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-sans font-bold text-lg text-white mb-2">Fútbol de Campo y Sala</h4>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Campeonatos inter-grupos donde se fomenta el juego limpio, la estrategia y la hermandad entre compañeros.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Voleibol -->
+                <div class="bg-slate-800/80 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?auto=format&fit=crop&q=80&w=600" 
+                             alt="Equipo de Voleibol" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                             onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Voleibol'">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-bold px-3 py-1 rounded-full">Voleibol</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-sans font-bold text-lg text-white mb-2">Voleibol en Equipo</h4>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Desarrollo de agilidad, reflejos e inteligencia colectiva con encuentros regulares en las canchas de la Villa.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Atletismo -->
+                <div class="bg-slate-800/80 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?auto=format&fit=crop&q=80&w=600" 
+                             alt="Carrera de Atletismo" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                             onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Atletismo'">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-bold px-3 py-1 rounded-full">Atletismo</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-sans font-bold text-lg text-white mb-2">Atletismo y Carreras</h4>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Pruebas de velocidad, resistencia y fondo que forjan la determinación individual y la superación personal.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Gimnasia y Calistenia -->
+                <div class="bg-slate-800/80 rounded-2xl overflow-hidden border border-slate-700 hover:border-slate-500 transition-all group">
+                    <div class="h-48 overflow-hidden relative">
+                        <img src="https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&q=80&w=600" 
+                             alt="Ejercicios de Calistenia y Gimnasia" 
+                             class="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                             onerror="this.src='https://placehold.co/600x400/0f172a/ffffff?text=Gimnasia'">
+                        <span class="absolute top-3 right-3 bg-slate-900/80 text-white text-xs font-bold px-3 py-1 rounded-full">Gimnasia</span>
+                    </div>
+                    <div class="p-5">
+                        <h4 class="font-sans font-bold text-lg text-white mb-2">Gimnasia y Calistenia</h4>
+                        <p class="text-slate-300 text-xs leading-relaxed">
+                            Acondicionamiento físico general, flexibilidad y rutinas que mantienen un cuerpo sano e integral.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- VIDA RESIDENCIAL Y RUTINAS DIARIAS -->
+    <section id="vida-residencial" class="py-20 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-brand-blue font-sans font-bold uppercase tracking-wider text-sm">Convivencia Fraterna</span>
+                    <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-slate-900">Vida Residencial y Actividades Diarias</h2>
+                    <p class="text-slate-600 leading-relaxed">
+                        En la Villa de los Niños en Guatemala, el entorno residencial está diseñado para ser una verdadera familia. Se cultiva la convivencia pacífica, la autodisciplina, la higiene personal y la formación ciudadana.
+                    </p>
+
+                    <!-- Features checklist -->
+                    <div class="space-y-4 pt-2">
+                        <div class="flex items-start space-x-3">
+                            <div class="text-emerald-500 mt-1"><i class="fa-solid fa-circle-check text-lg"></i></div>
+                            <div>
+                                <h4 class="font-sans font-bold text-slate-800 text-base">Rutina Estructurada</h4>
+                                <p class="text-slate-600 text-xs">Horarios equilibrados para descanso, estudio, aseo personal, actividades deportivas y recreación.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-emerald-500 mt-1"><i class="fa-solid fa-circle-check text-lg"></i></div>
+                            <div>
+                                <h4 class="font-sans font-bold text-slate-800 text-base">Banda Artesanal y Música</h4>
+                                <p class="text-slate-600 text-xs">Expresión artística y musical mediante bandas de marcha, coros y práctica de instrumentos.</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start space-x-3">
+                            <div class="text-emerald-500 mt-1"><i class="fa-solid fa-circle-check text-lg"></i></div>
+                            <div>
+                                <h4 class="font-sans font-bold text-slate-800 text-base">Formación Ética y Cívica</h4>
+                                <p class="text-slate-600 text-xs">Promoción constante de los valores de patriotismo, respeto, tolerancia y fe.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Collage / Timeline -->
+                <div class="lg:col-span-6">
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="space-y-4">
+                            <div class="bg-white p-4 rounded-2xl shadow-md border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&q=80&w=500" alt="Estudio en clase" class="rounded-xl h-40 w-full object-cover mb-3" onerror="this.src='https://placehold.co/500x300/e2e8f0/1e293b?text=Estudio'">
+                                <h4 class="font-bold text-slate-800 text-sm">Aulas de Clase</h4>
+                                <p class="text-xs text-slate-500">Concentración y superación académica.</p>
+                            </div>
+                            <div class="bg-brand-blue text-white p-5 rounded-2xl shadow-md">
+                                <i class="fa-solid fa-music text-3xl text-amber-400 mb-2"></i>
+                                <h4 class="font-bold text-base">Banda Musical</h4>
+                                <p class="text-xs text-blue-200">Disciplina armónica y ritmo en eventos de la institución.</p>
+                            </div>
+                        </div>
+                        <div class="space-y-4 pt-6">
+                            <div class="bg-amber-500 text-slate-950 p-5 rounded-2xl shadow-md">
+                                <i class="fa-solid fa-hands-holding-child text-3xl text-slate-950 mb-2"></i>
+                                <h4 class="font-bold text-base">Valores Humanos</h4>
+                                <p class="text-xs text-amber-950">Respeto, cooperación y espíritu de servicio comunal.</p>
+                            </div>
+                            <div class="bg-white p-4 rounded-2xl shadow-md border border-slate-100">
+                                <img src="https://images.unsplash.com/photo-1526786220381-1e21ebc91488?auto=format&fit=crop&q=80&w=500" alt="Comedor y convivencia" class="rounded-xl h-40 w-full object-cover mb-3" onerror="this.src='https://placehold.co/500x300/e2e8f0/1e293b?text=Convivencia'">
+                                <h4 class="font-bold text-slate-800 text-sm">Comedor y Hogar</h4>
+                                <p class="text-xs text-slate-500">Alimentación nutritiva y momentos en familia.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- GALERIA INTERACTIVA DE ACTIVIDADES ESSENCIALES -->
+    <section id="actividades" class="py-20 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-brand-sky font-sans font-bold uppercase tracking-wider text-sm">Explora Nuestro Día a Día</span>
+                <h2 class="font-sans font-extrabold text-3xl sm:text-4xl text-slate-900 mt-2">Galería de Actividades Esenciales</h2>
+                <p class="text-slate-600 mt-2 text-sm sm:text-base">Haz clic en cada categoría para filtrar las actividades principales que moldean el futuro de nuestros niños.</p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-10" id="filter-buttons">
+                <button data-filter="all" class="filter-btn bg-brand-blue text-white font-sans font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full shadow transition-all">
+                    Todas
+                </button>
+                <button data-filter="estudio" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-sans font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all">
+                    Estudio & Aulas
+                </button>
+                <button data-filter="deporte" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-sans font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all">
+                    Deportes & Baloncesto
+                </button>
+                <button data-filter="talleres" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-sans font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all">
+                    Talleres Técnicos
+                </button>
+                <button data-filter="valores" class="filter-btn bg-slate-100 hover:bg-slate-200 text-slate-700 font-sans font-semibold text-xs sm:text-sm px-5 py-2.5 rounded-full transition-all">
+                    Vida & Valores
+                </button>
+            </div>
+
+            <!-- Gallery Cards Grid -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8" id="gallery-container">
+                <!-- Activity Card 1 -->
+                <div class="activity-card studio bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all" data-category="estudio">
+                    <img src="https://images.unsplash.com/photo-1503676260728-1c00da094a0b?auto=format&fit=crop&q=80&w=600" alt="Clases de ciencias" class="w-full h-52 object-cover" onerror="this.src='https://placehold.co/600x400?text=Estudio'">
+                    <div class="p-6">
+                        <span class="bg-blue-100 text-blue-800 text-xs font-bold px-2.5 py-1 rounded-md">Académico</span>
+                        <h3 class="font-sans font-bold text-lg text-slate-900 mt-3 mb-2">Clases Teóricas y Ciencias</h3>
+                        <p class="text-xs text-slate-600">Instrucción en materias científicas y humanísticas con apoyo tecnológico interactivo.</p>
+                    </div>
+                </div>
+
+                <!-- Activity Card 2 -->
+                <div class="activity-card deporte bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all" data-category="deporte">
+                    <img src="https://images.unsplash.com/photo-1519766304817-4f37bda74a29?auto=format&fit=crop&q=80&w=600" alt="Baloncesto" class="w-full h-52 object-cover" onerror="this.src='https://placehold.co/600x400?text=Baloncesto'">
+                    <div class="p-6">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md">Deporte Destacado</span>
+                        <h3 class="font-sans font-bold text-lg text-slate-900 mt-3 mb-2">Clínicas de Baloncesto</h3>
+                        <p class="text-xs text-slate-600">Entrenamiento de fundamentos técnicos, pases, tiro en suspensión y estrategia en cancha.</p>
+                    </div>
+                </div>
+
+                <!-- Activity Card 3 -->
+                <div class="activity-card talleres bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all" data-category="talleres">
+                    <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&q=80&w=600" alt="Computación" class="w-full h-52 object-cover" onerror="this.src='https://placehold.co/600x400?text=Computacion'">
+                    <div class="p-6">
+                        <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2.5 py-1 rounded-md">Técnico</span>
+                        <h3 class="font-sans font-bold text-lg text-slate-900 mt-3 mb-2">Taller de Informática</h3>
+                        <p class="text-xs text-slate-600">Manejo de programas informáticos, procesamiento de datos e introducción al pensamiento lógico.</p>
+                    </div>
+                </div>
+
+                <!-- Activity Card 4 -->
+                <div class="activity-card valores bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all" data-category="valores">
+                    <img src="https://images.unsplash.com/photo-1511632765486-a01980e01a18?auto=format&fit=crop&q=80&w=600" alt="Convivencia en comunidad" class="w-full h-52 object-cover" onerror="this.src='https://placehold.co/600x400?text=Valores'">
+                    <div class="p-6">
+                        <span class="bg-emerald-100 text-emerald-800 text-xs font-bold px-2.5 py-1 rounded-md">Vida Residencial</span>
+                        <h3 class="font-sans font-bold text-lg text-slate-900 mt-3 mb-2">Asambleas de Valores</h3>
+                        <p class="text-xs text-slate-600">Reuniones de reflexión donde se destacan el compañerismo, la honestidad y el civismo.</p>
+                    </div>
+                </div>
+
+                <!-- Activity Card 5 -->
+                <div class="activity-card deporte bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all" data-category="deporte">
+                    <img src="https://images.unsplash.com/photo-1508098682722-e99c43a406b2?auto=format&fit=crop&q=80&w=600" alt="Fútbol interclases" class="w-full h-52 object-cover" onerror="this.src='https://placehold.co/600x400?text=Futbol'">
+                    <div class="p-6">
+                        <span class="bg-amber-100 text-amber-800 text-xs font-bold px-2.5 py-1 rounded-md">Deporte</span>
+                        <h3 class="font-sans font-bold text-lg text-slate-900 mt-3 mb-2">Liga Interna de Fútbol</h3>
+                        <p class="text-xs text-slate-600">Encuentros vespertinos los fines de semana que estimulan la sana competencia recreativa.</p>
+                    </div>
+                </div>
+
+                <!-- Activity Card 6 -->
+                <div class="activity-card talleres bg-slate-50 rounded-2xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all" data-category="talleres">
+                    <img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&q=80&w=600" alt="Carpintería" class="w-full h-52 object-cover" onerror="this.src='https://placehold.co/600x400?text=Carpinteria'">
+                    <div class="p-6">
+                        <span class="bg-purple-100 text-purple-800 text-xs font-bold px-2.5 py-1 rounded-md">Vocacional</span>
+                        <h3 class="font-sans font-bold text-lg text-slate-900 mt-3 mb-2">Carpintería y Ebanistería</h3>
+                        <p class="text-xs text-slate-600">Creación de piezas en madera, aprendiendo mediciones, ensamble y acabados profesionales.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BANNER DE COMPROMISO Y MENSAJE DE IMPACTO -->
+    <section class="py-16 gradient-gold border-y border-amber-200">
+        <div class="max-w-5xl mx-auto px-4 text-center space-y-6">
+            <div class="w-16 h-16 bg-amber-500 text-slate-950 rounded-full flex items-center justify-center text-3xl mx-auto shadow-md">
+                <i class="fa-solid fa-quote-left"></i>
+            </div>
+            <h2 class="font-sans font-extrabold text-2xl sm:text-3xl text-slate-900 leading-snug">
+                "Educar al niño de hoy es formar el ciudadano íntegro del mañana."
+            </h2>
+            <p class="text-slate-700 text-sm sm:text-base max-w-2xl mx-auto">
+                En la Villa de los Niños de Guatemala, cada hora de estudio, cada enceste en la cancha de baloncesto y cada proyecto en los talleres acerca a nuestros jóvenes a un futuro lleno de dignidad, trabajo e independencia.
+            </p>
+        </div>
+    </section>
+
+    <!-- FOOTER INSTITUCIONAL -->
+    <footer id="contacto" class="bg-slate-950 text-slate-400 py-16">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-slate-800">
+                <!-- Columna 1: Info -->
+                <div class="space-y-4">
+                    <div class="flex items-center space-x-3">
+                        <div class="w-10 h-10 rounded-full bg-brand-blue flex items-center justify-center text-amber-400 font-bold text-lg">
+                            <i class="fa-solid fa-child-reaching"></i>
+                        </div>
+                        <span class="font-sans font-extrabold text-lg text-white">VILLA DE LOS NIÑOS</span>
+                    </div>
+                    <p class="text-xs leading-relaxed text-slate-400">
+                        Institución educativa sin fines de lucro en Guatemala dedicada a transformar la vida de niños y jóvenes de escasos recursos a través de la educación, el deporte y los valores.
+                    </p>
+                </div>
+
+                <!-- Columna 2: Ubicación & Contacto -->
+                <div class="space-y-3">
+                    <h4 class="font-sans font-bold text-white text-sm uppercase tracking-wider">Ubicación y Contacto</h4>
+                    <ul class="text-xs space-y-2.5">
+                        <li class="flex items-start gap-2.5">
+                            <i class="fa-solid fa-location-dot text-amber-400 mt-1"></i>
+                            <span>Guatemala, América Central</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-phone text-amber-400"></i>
+                            <span>+502 2000-0000 (Información General)</span>
+                        </li>
+                        <li class="flex items-center gap-2.5">
+                            <i class="fa-solid fa-envelope text-amber-400"></i>
+                            <span>contacto@villadelosninos.org.gt</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- Columna 3: Enlaces Rápidos -->
+                <div class="space-y-3">
+                    <h4 class="font-sans font-bold text-white text-sm uppercase tracking-wider">Nuestros Programas</h4>
+                    <ul class="text-xs space-y-2">
+                        <li><a href="#educacion" class="hover:text-amber-400 transition-colors">Educación Secundaria</a></li>
+                        <li><a href="#deportes" class="hover:text-amber-400 transition-colors">Baloncesto & Liga Deportiva</a></li>
+                        <li><a href="#educacion" class="hover:text-amber-400 transition-colors">Talleres Vocacionales Técnicos</a></li>
+                        <li><a href="#vida-residencial" class="hover:text-amber-400 transition-colors">Banda Artesanal & Música</a></li>
+                    </ul>
+                </div>
+
+                <!-- Columna 4: Redes & Apoyo -->
+                <div class="space-y-4">
+                    <h4 class="font-sans font-bold text-white text-sm uppercase tracking-wider">Únete a la Causa</h4>
+                    <p class="text-xs text-slate-400">Síguenos en nuestras redes institucionales para conocer historias de éxito de nuestros estudiantes.</p>
+                    <div class="flex space-x-3">
+                        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 flex items-center justify-center text-white transition-all" aria-label="Facebook">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 flex items-center justify-center text-white transition-all" aria-label="Instagram">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="#" class="w-9 h-9 rounded-full bg-slate-800 hover:bg-amber-500 hover:text-slate-950 flex items-center justify-center text-white transition-all" aria-label="YouTube">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bottom Copyright -->
+            <div class="pt-8 flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+                <p>&copy; 2026 Villa de los Niños Guatemala. Todos los derechos reservados.</p>
+                <p class="mt-2 sm:mt-0">Formando con amor, disciplina y valor.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- INTERACTIVE JAVASCRIPT -->
+    <script>
+        // Toggle Mobile Menu
+        const mobileMenuBtn = document.getElementById('mobile-menu-btn');
+        const mobileMenu = document.getElementById('mobile-menu');
+        const mobileLinks = document.querySelectorAll('.mobile-link');
+
+        mobileMenuBtn.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+
+        mobileLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.add('hidden');
+            });
+        });
+
+        // Interactive Activity Filter
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const activityCards = document.querySelectorAll('.activity-card');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                const filter = btn.getAttribute('data-filter');
+
+                // Update active state of buttons
+                filterBtns.forEach(b => {
+                    b.classList.remove('bg-brand-blue', 'text-white', 'shadow');
+                    b.classList.add('bg-slate-100', 'text-slate-700');
+                });
+                btn.classList.remove('bg-slate-100', 'text-slate-700');
+                btn.classList.add('bg-brand-blue', 'text-white', 'shadow');
+
+                // Show/Hide cards with subtle transition effect
+                activityCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all' || category === filter) {
+                        card.style.display = 'block';
+                        setTimeout(() => {
+                            card.style.opacity = '1';
+                            card.style.transform = 'scale(1)';
+                        }, 50);
+                    } else {
+                        card.style.opacity = '0';
+                        card.style.transform = 'scale(0.95)';
+                        setTimeout(() => {
+                            card.style.display = 'none';
+                        }, 200);
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html><html lang="es" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Villa de los Niños Guatemala | Formación Integral y Esperanza</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        brand: {
+                            blue: '#1E3A8A',
+                            sky: '#0284C7',
+                            gold: '#F59E0B',
